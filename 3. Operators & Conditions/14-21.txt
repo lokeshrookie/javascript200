@@ -1,0 +1,111 @@
+
+14. What are operators? What are the types of opeartors in js?
+
+    Bodmas= Brackets, Order, Division, Multiplication, Addition, Subtraction.
+
+   
+15. What is the difference between unary, binary, and ternary operators?
+
+     Unary: operation perfomed on single operator.
+        ex: a++, a--, etc.
+
+    Binary: operation is perfomed on two operands.
+        ex: a + b, a-b.
+
+    Ternary: operation is performed on three operands.
+            let marks = 80;
+        ex: let result = markes>80 ? 'Pass' : 'Fail'.
+
+
+16. What is short-circuit evaluation in Js?
+
+    Short-circuit evaluation stops the execution as soon as the result can be 
+    determined without the remaining sub-expressin.
+
+    getData = () => 0;
+    showError = () => 5;
+    let result = getData() || showError();
+    console.log(result); // If getData() returns a falsy value, call showError()
+
+
+17. What is operator precedence?
+
+        Bodmas= Brackets, Order, Division, Multiplication, Addition, Subtraction.
+
+
+
+18. what ar the types of conditional statements in Js?
+
+    if/else
+    ternary
+    switch:
+        ex: 
+            let a = 5;
+            switch(a){
+                case 2: 
+                    console.log("two");
+                    break;
+                case 5: 
+                    console.log("five");
+                    break;
+                default:
+                    console.log("0");
+            }
+                
+
+
+
+19. When to use which type of conditional statements in real applications?
+
+20. What is the difference between == and ===?
+
+    Loose Equality(==): compares two values for Equality after performing type coercion
+    ==: used to compare two values (type coersion exist)
+
+    Strict Equality(===): compares two values for equality without performing type coercion.    
+    ===: used to compare value and type of two vairables.
+
+21. What is the difference between Spread and Rest operator?
+
+    Spread(...) is used to expand or spread elements from an iterable(such as an array,
+    string or object) into individual elements.
+    
+    ex: const array = [1,2,3];
+    console.log(...array); // output: 1,2,3
+
+    There are three mains applications of Spread operator:
+    1. Copying an Array: 
+        const originalArray = [1,2,3];
+        const copiedArray = [...originalArray];
+        console.log(copiedArray);
+    2. Merging arrays
+        const array1 = [1,2,3];
+        const array2 = [4,5];
+        const mergedArray = [...array1, ...array2];
+        console.log(a+b+c+d+e); // output: [1,2,3,4,5]
+    3.  Passing Multiple Arguments to Function:
+        const numbers = [1,2,3,4,5];
+        sum(...numbers);
+        funciton sum(a, b, c, d, e){
+            console.log(a + b + c + d + e); // output: 15
+        }
+
+    Rest operator: used in funciton parameters to collect all remaining
+        Arguments into an array.
+
+        ex: 
+            display(1,2,3,4,5);
+
+            funciton display(first, second, ...remaining){
+                console.log(first);
+                console.log(second);
+
+                console.log(remaining); // output: [3,4,5];
+            }   
+
+
+
+
+
+
+
