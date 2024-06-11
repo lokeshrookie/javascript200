@@ -1,0 +1,57 @@
+
+9. What are variables? difference between var, let, and const?
+
+    variables are used to store data. (ex: var count = 10;)
+
+    function scope: var
+    block scope: let, const
+
+10. What are data typs in JS?
+    
+    Primitives (single values, immutable(new addressed will be referenced after changing value.))
+    let age = 25;          => Number
+    let message = 'Hello'; => String
+    let isTrue = true; => Boolean
+    let x;              => undefined
+    let y = null        => null
+
+    Non-Primitives(Complex data types) (multiple values,  Mutable)
+    Object
+    Array
+    function
+    Date
+    RegExp
+
+11. difference between empty, null and undefined?
+
+    empty: valid variable, datatype is there, value is also there.but empty or 0.
+    null: valid variable, but no data type.
+    undefined: value is not assigned to the variale/ variable is incomplete.
+
+12. what is "typeof" operator?
+
+    typeof operator is used to determine the type of each variable.
+    
+    realtimeuse: typeof operator used to validate the data received from the external source
+
+    ex: var name = "lokesh"
+        console.log(typeof name); // output: String.
+
+13. What is type coersion in JS?
+
+    Type coersion means automatic coversion of values from one type to another, during
+    certain operations or comparisons.
+
+    Realtime usecases: 
+    1. During String and Number Concatenation
+        let string = "42", number = 42, let boolean = true;
+        ex: console.log(string + Number) // output: 4242
+
+        console.log(number + boolean) // output: 43  // 43 + 1 (since, true is coherted as 1)
+
+    2. While using comparison operators
+        ex: console.log(number == string) // output: true ("42" is coerted to 42).
+
+
+
+

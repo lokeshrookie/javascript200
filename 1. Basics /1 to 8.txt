@@ -1,0 +1,59 @@
+
+1. What is javascript? What is the role of javascript enginer?
+
+    javascript is a programming languae that is used for converting
+     static web pages to interactive and dynamic web pages.
+
+    JAVASCRIPT ENGINE is a program present in the web browsers that execute js code
+    
+2.  What are client side and Server side?
+    
+    CLIENT is a device, application, or software component that requests
+    and consumes services or resources from a server.
+
+    Server is a device, computer, or software application that provides services,
+    resources, or functions to clients.
+
+3.  What is scope of JavaScript?
+
+    A Scope determines where variables are defined and where they can be accessed.
+
+    global: accesible anywhere
+    function: not accesible outside the function
+    block: accesible only inside the block, where it is defined.
+
+4.  What is the type of a variable in JS when it is declared without using the var,
+     let, or const keywords?
+
+    "var" is the implicit type of variable when a variable is declared without var,
+    let, or const keywords.
+
+7.  What is hoisitng in JavaScript?
+
+    javascript code executes in top down approach.
+
+    hoisitng is the JavaScript behaviour where funcitons and variables declerations
+    are moved to the top of their respective scopes during the time of compilation.
+
+    Function hoisitng and variable hoisitng(let does not support hoisting).
+
+8.  What is JSON? 
+
+    JSON(JavaScript Object Notation) is a lightweight data interchange format.
+    JSON consists of key-value pairs.
+
+    request to, and response from server mostly in JSON format. sometimes xml format.
+
+    Ex: 
+    {
+        "name": "Lokesh",
+        "age": 24,
+        "isStudent": false,
+        "address": {
+            "street": "Madhapur",
+            "city": "hyderabad",
+            "country": "India"
+        }
+    }
+
+
