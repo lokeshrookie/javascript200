@@ -1,0 +1,141 @@
+
+22. What are Arrays iln JS? How to get, add & remove elements from arrays?
+
+
+23. What is indexOf() method of an Array?
+
+
+24. What is the difference between find() and filter() methods of an Array?
+    
+    find() => get the first elements that satisfies the condition.
+    ex: const arrat = [1,2,3,4,5];
+        let c = array.find((num) => num % 2 == 0 );
+        console.log(c); // output: 2
+    
+    filter() => get the array with elements the satisfies the condition
+    ex: const array = [1,2,3,4,5];
+        let c = array.filter((num) => num % 2 == 0);
+        console.log(c); //output: [2,4];
+    
+    slice() =>  used to return the subset of an array.
+    ex: const array = [1,2,3,4,5];
+        let c = arra.slice(1,4); //  3 index is exclusive.
+        console.log(c); // [2,3,4];
+
+25. What is slice() method of an Array?
+
+       slice() =>  used to return the subset of an array.
+    ex: const array = [1,2,3,4,5];
+        let c = arra.slice(1,4); //  3 index is exclusive.
+        console.log(c); // [2,3,4];
+    
+26. What is the difference between push() and concat() in Arrays?
+
+    push() => will modify the original array itself.
+    ex: let array1 = [1,2];
+        array1.push(3,4);
+        console.log(array1); // output: [1,2,3,4];
+    
+    concat() =>  will create a new array and not modify the original array.
+    ex: let array2 = [5,6];
+        let array3 = array2.concat(7,8);
+        console.log(array3); // output: [5,6,7,8];
+        console.log(array2); // output: [5,6];
+
+
+27. what is the difference between pop() and shif() of an Array?
+
+    pop() => removes the last element of an array .
+
+    shift() => removes the first element of an array.
+
+28. What is the splice() method of an Array?
+
+     splice() => used to add, remove, or replace elements in an array.
+    syntax: array.splice(startIndex, deleteCount, ...itemsToAdd);
+    array.splice(start, deleteCount, item1, item2, ...);
+
+
+    Ex: add elements to an array.
+        let letters = ['a', 'b', 'c'];
+        letters.splice(1, 0, 'x', 'y');
+        console.log(letters); // output: ['a', 'x', 'y', 'b', 'c'];
+
+    Ex: remove elements from an array.
+        syntax: array.splice(startIndex, deleteCount);
+
+        const myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+        const removed = myFish.splice(2,1); // removes mandarin.
+    
+    Ex: replace elements of an array.
+    syntax: array.splice(startIndex, count, "element");
+
+        const myFish = ['angel', 'clown', 'mandarin'];
+        myFish.splice(1,1, 'drown'); // replaces 'clown' with 'drum'
+
+        The splice() method returns an array containing the deleted elements.
+        If no elements are removed, an empty array is returned.
+        Remember that splice() modifies the original array. 
+        If you need a new array without mutating the original,
+         consider using slice() or other techniques. 🚀
+
+29. What is the difference between the slice() and splice() of Array?
+
+
+30. What is difference between map() and forEach() of Array?
+
+    map() => used when you want to modify each element of an array and create 
+    a new array with modified values.
+
+    forEach() => used when you want to perform some operation on each element
+    of an array without creating new array.
+
+31. How to sort and reverse an array?
+
+    reverse() => will not work on numbers.
+    only works on strings.
+
+
+32. What is Array Destructuring in Js?
+    
+    converting elements of array into individual values
+    ex: 
+        let Fruits = ["apple", "ball", "cat"];
+        const [firstFruit, secondFruit, thirdFruit] = 
+
+
+33. What are array-like objects in Js?
+
+    objects which have index and length property. 
+    But, they may not have all the methods of array like push(), pop(), etc,..
+    ex: Strings, arguments, HTMl collections.
+
+34. How to convert an array-like object into an array?
+
+    Using Array.from():
+The Array.from() method creates a new array from an array-like or iterable object.
+Example:
+JavaScript
+
+const arrayLike = { 0: 'apple', 1: 'banana', 2: 'cherry', length: 3 };
+const convertedArray = Array.from(arrayLike);
+console.log(convertedArray); // Output: ['apple', 'banana', 'cherry']
+AI-generated code. Review and use carefully. More info on FAQ.
+Using Object.keys() and map():
+If the array-like object has numeric keys, you can use Object.keys() to get the keys and then map them to their corresponding values.
+Example:
+JavaScript
+
+const obj = { 0: 'foo', 1: 'bar', 2: 'baz', length: 3 };
+const result = Object.keys(obj).map((key) => obj[key]);
+console.log(result); // Output: ['foo', 'bar', 'baz']
+AI-generated code. Review and use carefully. More info on FAQ.
+Using Object.entries() and map():
+If you want both keys and values in the resulting array, use Object.entries() and map the key-value pairs.
+Example:
+JavaScript
+
+const anotherObj = { a: 1, b: 2, c: 3 };
+const keyValuePairs = Object.entries(anotherObj);
+console.log(keyValuePairs); // Output: [['a', 1], ['b', 2], ['c', 3]]
+AI-generated code. Review and use carefully. More info on FAQ.
