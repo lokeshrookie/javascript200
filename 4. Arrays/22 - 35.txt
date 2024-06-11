@@ -115,21 +115,21 @@
     Using Array.from():
 The Array.from() method creates a new array from an array-like or iterable object.
 Example:
-JavaScript
 
 const arrayLike = { 0: 'apple', 1: 'banana', 2: 'cherry', length: 3 };
 const convertedArray = Array.from(arrayLike);
 console.log(convertedArray); // Output: ['apple', 'banana', 'cherry']
-AI-generated code. Review and use carefully. More info on FAQ.
+
+
 Using Object.keys() and map():
 If the array-like object has numeric keys, you can use Object.keys() to get the keys and then map them to their corresponding values.
-Example:
-JavaScript
 
+Example:
 const obj = { 0: 'foo', 1: 'bar', 2: 'baz', length: 3 };
 const result = Object.keys(obj).map((key) => obj[key]);
 console.log(result); // Output: ['foo', 'bar', 'baz']
-AI-generated code. Review and use carefully. More info on FAQ.
+
+
 Using Object.entries() and map():
 If you want both keys and values in the resulting array, use Object.entries() and map the key-value pairs.
 Example:
@@ -138,4 +138,3 @@ JavaScript
 const anotherObj = { a: 1, b: 2, c: 3 };
 const keyValuePairs = Object.entries(anotherObj);
 console.log(keyValuePairs); // Output: [['a', 1], ['b', 2], ['c', 3]]
-AI-generated code. Review and use carefully. More info on FAQ.
