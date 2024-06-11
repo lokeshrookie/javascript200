@@ -1,4 +1,3 @@
-
 1. What is javascript? What is the role of javascript enginer?
 
     javascript is a programming languae that is used for converting

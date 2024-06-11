@@ -1,4 +1,3 @@
-
 9. What are variables? difference between var, let, and const?
 
     variables are used to store data. (ex: var count = 10;)
